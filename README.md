@@ -53,7 +53,7 @@ labs	0
 quux	4
 ```
 ## Generalization
-The folder **grep** provide code that we could use to manage __any__ type of search. In this case, our search criterias should be encoded in RegEx format and provided as commendline inputs. For example, if we want to find all the words that start with "f" or end with "d", we could run the following:
+The folder **grep** provide code that we could use to manage __any__ type of search. In this case, our search criteria should be encoded in RegEx format and provided as commendline inputs. For example, if we want to find all the words that start with "f" or end with "d", we could run the following:
 
 ```
 docker run \
