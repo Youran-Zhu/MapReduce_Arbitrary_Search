@@ -67,8 +67,8 @@ Notice:
   3) The **\.\*d** keyword - corresponds to "all the words that end with 'd' " in RegEx 
   4) We could add as many RegEx criteria as we want. These criteria are connected by logic "Or". In other word, it will find all the words that conform to any one of these criteria. 
 
-expected output:
-(The sample txt files are slight different from the other two folder for illustration purpose.)
+expected output:  
+    (The sample txt files are slight different from the other two folder for illustration purpose.)
 ```
 foo	6
 food	3
