@@ -4,6 +4,7 @@
 import sys
 import re
 
+#take arbitray selection criteria in RegEx type
 arg_list = sys.argv[1:]
 
 # input comes from STDIN (standard input)
@@ -12,7 +13,7 @@ for line in sys.stdin:
     line = line.strip()
     # split the line into words
     words = line.split()
-    # increase counters
+    # increase counters for words conform to the RegEx form
     for word in words:
         flag = False
         # write the results to STDOUT (standard output);
@@ -20,8 +21,8 @@ for line in sys.stdin:
         # Reduce step, i.e. the input for reducer.py
         #
         # tab-delimited; the trivial word count is 1
-        for i in arg_list:
-            if re.search(i, word):
+        for arg in arg_list:
+            if re.search(arg, word):
                 flag = True
                 break
         if flag or len(arg_list) == 0:
